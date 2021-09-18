@@ -1,13 +1,116 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body {
+  margin: 0;
+}
+
+.above-content {
+  margin-bottom: 5rem;
+}
+
+header {
+  position: sticky;
+  top: 50px;
+  left: 0;
+  z-index: -1;
+}
+
+.show {
+  display: block;
+}
+
+header p {
+  width: 40vw;
+}
+
+.parallax {
+  min-height: 300vh;
+}
+
+.sticky {
+  position: sticky;
+  top: -100px;
+  height: 300vh;
+}
+
+.frame {
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+}
+
+.image {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right 45px bottom -200px;
+}
+
+.image_0 {
+  top: 100px;
+  z-index: 0;
+  background-image: url("./images/dog1.png");
+  background-attachment: fixed;
+}
+
+.image_1 {
+  top: 100px;
+  z-index: 1;
+  background-image: url("./images/dog1.png");
+  background-attachment: fixed;
+}
+
+.image_2 {
+  z-index: 2;
+  background-image: url("./images/dog2.png");
+  background-attachment: fixed;
+}
+
+.image_3 {
+  z-index: 3;
+  background-image: url("./images/dog3.png");
+  background-attachment: fixed;
+}
+
+.image_4 {
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./images/dog4.png");
+  background-attachment: fixed;
+  background-position: right 45px bottom -205px;
+}
+
+.image_visible {
+  top: 100px;
+  opacity: 1;
+}
+
+.other-content {
+  margin-top: 10rem;
+  position: relative;
+  z-index: 200;
 }
